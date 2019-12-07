@@ -1,0 +1,3 @@
+# GitPick
+
+### Clone multiple repositories
