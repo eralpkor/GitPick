@@ -11,28 +11,37 @@ module.exports = [
     user: 'hudson-m-c'
   },
   {
-    dir: 'humayun',
-    user: 'itshum'
-  },
-  {
     dir: 'igor',
     user: 'embiggenerd'
   },
-  {
-    dir: 'jacob',
-    user: 'bremerjp'
-  },
+  // {
+  //   dir: 'jacob',
+  //   user: 'bremerjp'
+  // },
   {
     dir: 'michael',
     user: 'mphelps1978'
   },
   {
     dir: 'nicholas',
-    user: 'Nsandomeno'
-  }];
+    user: 'Nsandomeno',
+  },
+  {
+    dir: 'vanessa',
+    user: 'vanessamclendon2'
+  },
+  {
+    dir: 'asher',
+    user: 'asherkobin',
+  },
+];
 
   
   // {
   //   dir: 'brandon',
   //   user: 'Belmo4'
+  // },
+  // {
+  //   dir: 'humayun',
+  //   user: 'itshum'
   // },

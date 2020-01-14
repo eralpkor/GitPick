@@ -1,12 +1,14 @@
 // Simple GitHub multi clone tool
 
-var Git = require('nodegit');
-var path = require('path')
-var fs =require('fs')
-var students = require('./students.js'); // students array
+const Git = require('nodegit');
+const path = require('path')
+const fs =require('fs')
+const students = require('./students.js'); // students array
+const git = require('./directory.js');
+const gitRepos = git.gitRepos;
 
 // Change it for daily repositories challenge or sprints
-var gitRepoForToday = '/Sprint-Challenge-Applied-Javascript.git';
+let gitRepoForToday = '/React-Github-User-Card';
 
 function makeDir(dir_path) {
   if (!fs.existsSync(dir_path)) {
@@ -19,36 +21,37 @@ function getRepoUserName(name) {
   return `https://github.com/${name}${gitRepoForToday}`;
 }
 
-// this goes up one level and gets student directory
+// up one level and gets student directory
 function getFilePath(dir) {
-  return '../' + dir;
+  return gitRepos + dir;
 }
 
 // this is where the magic happens
-function cloneRepos() {
+(function cloneRepo() {
   return new Promise(function(resolve, reject) {
-    console.log('Starting to clone repos...');
+    console.log('Starting to clone repositories...');
     var promises = [];
     students.forEach(function(s) {
       var url = getRepoUserName(s.user);
       var userDirectory = getFilePath(s.dir);
       var gitDirectory = makeDir(userDirectory + gitRepoForToday);
       var p = Git.Clone(url, gitDirectory).then(repo => {
-        console.log("Cloned " + path.basename(url) + ' to ' + repo.workdir())
+        console.log(`\x1b[35mCloned: ${path.basename(url)} to \x1b[42m${repo.workdir()}\x1b[0m`)
       })
       .catch(err => console.log(err))
       promises.push(p);
     })
     console.log(promises)
     Promise.all(promises).then(function() {
-      console.log('\done');
+      console.log('\All done...');
       resolve('success');
     }).catch(function (e) {
       reject(e);
     })
   })
-}
+})()
 
-cloneRepos();
+
+// EOF
 
 

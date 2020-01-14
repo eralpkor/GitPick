@@ -16,6 +16,7 @@
   "author": "@eralp",
   "license": "ISC",
   "dependencies": {
-    "nodegit": "^0.26.2"
+    "nodegit": "^0.26.3",
+    "rimraf": "^3.0.0"
   }
 }
