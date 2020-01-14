@@ -10,10 +10,10 @@ lerna-debug.log*
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
 # Students data
-students.js
-emptydirs.py
-open.js
-directory.js
+./students.js
+./emptydirs.py
+.open.js
+.directory.js
 # Runtime data
 pids
 *.pid
