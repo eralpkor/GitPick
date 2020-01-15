@@ -3,9 +3,10 @@
 const Git = require('nodegit');
 const path = require('path')
 const fs =require('fs')
-const students = require('./students.js'); // students array
+// const students = require('./students.js'); // students array
 const git = require('./directory.js');
 const gitRepos = git.gitRepos;
+const students = git.students;
 
 // Change it for daily repositories challenge or sprints
 let gitRepoForToday = '/React-Github-User-Card';

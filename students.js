@@ -1,7 +1,7 @@
+// replace it with your own students GitHub user name
+// create students directories in your environment and replace "dir: student_directory"
 
-const gitRepos = 'C:\\Users\\Eralp\\Desktop\\fullstack-dev\\Lambda_School\\students\\student_repos\\';
-
-let students = [
+module.exports = [
   {
     dir: 'gerard',  // directory name
     user: 'juhrard' // student GitHub name
@@ -32,7 +32,16 @@ let students = [
   },
 ];
 
-module.exports = {
-  gitRepos,
-  students,
-};
+
+ // {
+  //   dir: 'jacob',
+  //   user: 'bremerjp'
+  // },
+   // {
+  //   dir: 'brandon',
+  //   user: 'Belmo4'
+  // },
+  // {
+  //   dir: 'humayun',
+  //   user: 'itshum'
+  // },
