@@ -1,5 +1,5 @@
 
-const students = require('./students.js');
+const students = require('./.students.js/index.js');
 const rmdir = require('rimraf');
 const git = require('./directory.js');
 const gitRepos = git.gitRepos;
