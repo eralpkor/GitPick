@@ -1,0 +1,22 @@
+{
+  "name": "gitpick",
+  "version": "0.0.1",
+  "description": "Clone and run student repositories",
+  "main": "clone.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "git",
+    "github",
+    "clone",
+    "grade",
+    "student"
+  ],
+  "author": "@eralp",
+  "license": "ISC",
+  "dependencies": {
+    "nodegit": "^0.26.3",
+    "rimraf": "^3.0.0"
+  }
+}
