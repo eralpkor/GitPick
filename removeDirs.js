@@ -1,8 +1,9 @@
 
-const students = require('./.students.js/index.js');
+
 const rmdir = require('rimraf');
-const git = require('./directory.js');
-const gitRepos = git.gitRepos;
+const directory = require('./.directory');
+const gitRepos = directory.gitRepos;
+const students = directory .students;
 
 // get student directory:
 function getFilePath(dir) {
