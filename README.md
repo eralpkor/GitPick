@@ -1,10 +1,13 @@
 # GitPick
 
-### Clone multiple repositories
+### Clone multiple repositories from gitHub
 
 Create a `.directory.js` file
 Add your own user list 
-eg: `const students = [{dir: 'dirName', 'user: 'github_User_Name'}];`
+example:
+```
+const students = [{dir: 'dirName', 'user: 'github_User_Name'}];
+```
 
 Add ropesitory directory:
 Mac - Linux
@@ -15,7 +18,7 @@ Windows
 ```
 const gitRepos = 'C:\\Users\\user_name\\directory_name\\';
 ```
-```
+```javascript
 module.exports = {
   gitRepos,
   students,
