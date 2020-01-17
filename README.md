@@ -1,6 +1,7 @@
 # GitPick
 
 ### Clone multiple repositories from gitHub
+Run `npm i` to install dependencies:
 
 Create a `.directory.js` file
 Add your own user list 
