@@ -1,7 +1,7 @@
 
 
 const rmdir = require('rimraf');
-const directory = require('./.directory');
+const directory = require('../.directory');
 const gitRepos = directory.gitRepos;
 const students = directory .students;
 
