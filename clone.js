@@ -4,12 +4,12 @@ const Git = require('nodegit');
 const path = require('path')
 const fs =require('fs')
 // const students = require('./students.js'); // students array
-const git = require('./.directory.js/index.js');
+const git = require('./.directory.js');
 const gitRepos = git.gitRepos;
 const students = git.students;
 
 // Change it for daily repositories challenge or sprints
-let gitRepoForToday = '/React-Github-User-Card';
+let gitRepoForToday = '/dark-mode';
 
 function makeDir(dir_path) {
   if (!fs.existsSync(dir_path)) {
@@ -45,7 +45,7 @@ function getFilePath(dir) {
     console.log(promises)
     Promise.all(promises).then(function() {
       console.log('\All done...');
-      resolve('success');
+      resolve(console.log('\All done...'));
     }).catch(function (e) {
       reject(e);
     })
