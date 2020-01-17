@@ -9,9 +9,10 @@ example:
 const students = [{dir: 'dirName', 'user: 'github_User_Name'}];
 ```
 
-Add ropesitory directory:
+Add repository directory:
+
 Mac - Linux
-```
+```javascript
 const gitRepos = '/Home/user/gitRepos';
 ```
 Windows
