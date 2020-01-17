@@ -13,7 +13,7 @@ const gitRepos = '/Home/user/gitRepos';
 ```
 Windows
 ```
-const gitRepos = 'C:\\Users\\user_name\\place\\';
+const gitRepos = 'C:\\Users\\user_name\\directory_name\\';
 ```
 ```
 module.exports = {
