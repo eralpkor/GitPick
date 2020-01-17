@@ -7,7 +7,7 @@ Create a `.directory.js` file
 Add your own user list 
 example:
 ```javascript
-const students = [{dir: 'dirName', user: 'github_User_Name'}];
+const students = [{dir: 'user_name', user: 'github_User_Name'}];
 ```
 
 Add repository directory:
