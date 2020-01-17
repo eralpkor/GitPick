@@ -4,7 +4,7 @@
 
 Create a `.directory.js` file
 Add your own user list 
-eg: const students = [{dir: 'dirName', 'user: 'github_User_Name'}];
+eg: `const students = [{dir: 'dirName', 'user: 'github_User_Name'}];`
 
 Add ropesitory directory:
 Mac - Linux
