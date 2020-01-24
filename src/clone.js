@@ -8,7 +8,7 @@ const gitRepos = git.gitRepos;
 const students = git.students;
 
 // Change it for daily repositories challenge or sprints
-let gitRepoForToday = '/dark-mode';
+let gitRepoForToday = '/Sprint-Challenge-State-Management-Smurfs';
 
 function makeDir(dir_path) {
   if (!fs.existsSync(dir_path)) {
@@ -43,7 +43,6 @@ function getFilePath(dir) {
     })
     console.log(promises)
     Promise.all(promises).then(function() {
-      console.log('\All done...');
       resolve(console.log('\All done...'));
     }).catch(function (e) {
       reject(e);
