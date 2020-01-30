@@ -1,5 +1,4 @@
 
-
 const rmdir = require('rimraf');
 const directory = require('../.directory');
 const gitRepos = directory.gitRepos;
@@ -16,8 +15,9 @@ function getFilePath(dir) {
       let userDirectory = getFilePath(s.dir);
       console.log(`Deleting ${s.dir}`)
       rmdir(userDirectory, (e) => {
+        let names = s.dir.charAt(0).toUpperCase() + s.dir.slice(1);
         console.log(e)
-        console.log(`\x1b[35m\Everything deleted...\x1b[0m`)
+        console.log(`\x1b[35m\From user name ${names} everything deleted...\x1b[0m`)
       });
     })
 })();
