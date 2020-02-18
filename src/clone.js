@@ -8,7 +8,7 @@ const gitRepos = git.gitRepos;
 const students = git.students;
 
 // Change it for daily repositories challenge or sprints
-let gitRepoForToday = '/Auth-Friends';
+let gitRepoForToday = '/node-db1-project';
 
 function makeDir(dir_path) {
   if (!fs.existsSync(dir_path)) {
